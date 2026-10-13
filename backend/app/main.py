@@ -60,11 +60,13 @@ class ChatRequest(BaseModel):
     history: list[ChatMessage] = Field(default_factory=list)
 
 
+
 @app.on_event("startup")
 def startup():
     print("Starting KnowledgeHub AI...")
     ensure_model_available()
     print("KnowledgeHub AI is ready.")
+
 
 
 @app.get("/")
