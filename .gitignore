@@ -1,0 +1,54 @@
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Backend secrets and local data
+backend/app/.env
+backend/app/uploads/
+backend/app/chroma_db/
+chroma_db/
+
+# Python virtual environment and cache
+venv/
+__pycache__/
+*.py[cod]
+
+# Secrets and environment configuration
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Database connection details
+DATABASE_URL*.txt
+
+# Python virtual environments and caches
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local AI and uploaded document data
+chroma_db/
+**/chroma_db/
+backend/app/uploads/
+
+# Frontend dependencies and build output
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Local development files
+.vscode/
+
+# Local backup files
+.gitignore.backup
+
+# Local practice and standalone test scripts
+backend/practice.py
+backend/app/*_test.py
+backend/app/test_*.py
